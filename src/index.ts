@@ -1,4 +1,4 @@
-import Hansei from "src/core/hansei";
+import Hansei from "src/core";
 
 const client = new Hansei();
 client.init();
