@@ -20,7 +20,7 @@ class MessageEvent extends Event {
 		if (command.cmdCooldown.has(message.author.id)) return message.delete({ timeout: 10000 }) && message.reply(command.cmdCooldown.get(message.author.id) / 1000).then((msg) => msg.delete({ timeout: 10000 }));
 		if (command.ownerOnly && config.ownerId !== message.author.id) return message.reply("명령어 사용 권한이 없습니다");
 		if (command.guildOnly && !message.guild) return message.reply("서버에서 명령어를 사용해주세요");
-		if (command.args && !args.length) return message.channel.send(!command.usage || "");
+		if (command.args && !args.length) return command.usage && message.reply(`\`\`${command.usage}\`\``).then((msg) => msg.delete({ timeout: 10000 }));
 
 		command.run(message, args);
 		if (command.cooldown > 0) command.startCooldown(message.author.id);

@@ -16,6 +16,13 @@
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
+"@my-school.info/neis-api@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@my-school.info/neis-api/-/neis-api-1.0.0.tgz#07fd21df4bf35480046c44024e4856f50e6cf5c6"
+  integrity sha512-Dslj7HS9VbO1mEEbHZAnlaUHvE/rlbGU+oFGrxX2vxEfALCTHjHMkjvaY7zp3wEbxhHODKGVN3r4cn+rHOIuxQ==
+  dependencies:
+    axios "^0.21.1"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"

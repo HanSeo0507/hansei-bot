@@ -52,6 +52,7 @@ class Hansei extends Client {
 
 	private async clientLogin() {
 		if (!config.token) throw new Error("No token provided");
+		if (!config.neisAPI) throw new Error("No Neis Open API token provided");
 
 		await super.login(config.token);
 	}

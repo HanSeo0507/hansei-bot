@@ -8,4 +8,5 @@ export default {
 	prefix: process.env.DISCORD_PREFIX,
 	token: process.env.DISCORD_TOKEN,
 	ownerId: process.env.OWNER_ID,
+	neisAPI: process.env.NEIS_OPEN_API,
 };
