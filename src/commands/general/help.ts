@@ -13,10 +13,6 @@ class Help extends Command {
 	}
 
 	public async run(message: Message, args: string[]) {
-		this.client.commands.map((v: any, k) => {
-			console.log(v.name, v.description);
-		});
-
 		const embed = {
 			color: "GREEN",
 			title: "📜 한세봇 도움말",
