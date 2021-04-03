@@ -33,7 +33,7 @@ class ReadyEvent extends Event {
            
         );
 
-		this.client.user.setPresence({ activity: { name: "한세야 도움말" }, status: "dnd" });
+		this.client.user.setPresence({ activity: { name: "한세야 도움말" }, status: "idle" });
 	}
 }
 
