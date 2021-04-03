@@ -32,6 +32,8 @@ class ReadyEvent extends Event {
             `${this.client.user.tag} is online, hosted by ${chalk.hex("#FDC830")(os.hostname())}\n`,
            
         );
+
+		this.client.user.setPresence({ activity: { name: "한세야 도움말" }, status: "dnd" });
 	}
 }
 
