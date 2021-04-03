@@ -10,6 +10,7 @@ class Status extends Command {
 	constructor(client) {
 		super(client);
 		this.name = "상태";
+		this.category = "일반";
 		this.aliases = ["서버상태"];
 		this.description = "봇을 호스팅 중인 서버의 상태를 안내합니다";
 		this.cooldown = 5000;

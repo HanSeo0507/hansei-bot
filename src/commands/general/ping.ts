@@ -7,6 +7,7 @@ class Ping extends Command {
 	constructor(client) {
 		super(client);
 		this.name = "핑";
+		this.category = "일반";
 		this.description = "서버와 디스코드 API간의 지연속도를 안내합니다";
 		this.cooldown = 5000;
 	}

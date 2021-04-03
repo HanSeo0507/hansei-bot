@@ -12,7 +12,7 @@ class Meal extends Command {
 	constructor(client) {
 		super(client);
 		this.name = "급식";
-		this.category = "school";
+		this.category = "학교";
 		this.description = "오늘, 내일, 특정일의 급식을 안내합니다";
 		this.usage = "한세야 급식 (오늘|내일|특정일(YYYYMMDD) *선택옵션*)";
 	}
