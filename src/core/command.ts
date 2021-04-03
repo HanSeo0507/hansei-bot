@@ -1,13 +1,14 @@
 import { Client, Message } from "discord.js";
+import { IClient } from "src/@types";
 
 class Command {
-	public client: Client;
+	public client: Client & IClient;
 	public name: string;
 	public description: string;
 	public usage?: string;
 	public args: boolean = false;
 	public aliases: string[] = [];
-	public category: string = "general";
+	public category: string = "일반";
 	public cooldown: number = 1000;
 	public cmdCooldown: Map<any, any>;
 	public guildOnly: boolean = false;
